@@ -3,11 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
+    "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check-case": "node check-import-case.js",
+    "fix-case": "node fix-import-case.js"
   },
   "dependencies": {
     "lucide-react": "^0.544.0",

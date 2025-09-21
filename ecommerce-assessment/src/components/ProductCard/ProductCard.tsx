@@ -1,8 +1,8 @@
 import type { FC } from "react";
-import type { Product } from "../../data/products";
-import Rating from "../Rating/Rating";
-import Badge from "../Badge/Badge";
-import { formatPrice } from "../../utilis/formatPrice";
+import type { Product } from "./../../data/products";
+import Rating from "./../Rating/Rating";
+import Badge from "./../Badge/Badge";
+import { formatPrice } from "./../../utilis/formatPrice";
 
 interface Props {
   product: Product;
