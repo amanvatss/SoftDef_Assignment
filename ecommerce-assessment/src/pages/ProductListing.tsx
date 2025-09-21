@@ -3,7 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
-import Toolbar from "../components/ToolBar/ToolBar";
+import Toolbar from "../components/ToolBar/Toolbar";
 import ProductCard from "../components/ProductCard/ProductCard";
 import Pagination from "../components/Pagination/Pagination";
 import Footer from "../components/Footer/Footer";
