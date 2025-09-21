@@ -1,14 +1,14 @@
 import { useState, useMemo, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import Navbar from "./../components/Navbar/Navbar";
-import Sidebar from "./../components/Sidebar/Sidebar";
-import HeroBanner from "./../components/HeroBanner/HeroBanner";
-import Toolbar from "./../components/Toolbar/Toolbar";
-import ProductCard from "./../components/ProductCard/ProductCard";
-import Pagination from "./../components/Pagination/Pagination";
-import Footer from "./../components/Footer/Footer";
-import { products } from "./../data/products";
-import type { Product } from "./../data/products";
+import Navbar from "../components/Navbar/Navbar";
+import Sidebar from "../components/Sidebar/Sidebar";
+import HeroBanner from "../components/HeroBanner/HeroBanner";
+import Toolbar from "../components/Toolbar/Toolbar";
+import ProductCard from "../components/ProductCard/ProductCard";
+import Pagination from "../components/Pagination/Pagination";
+import Footer from "../components/Footer/Footer";
+import { products } from "../data/products";
+import type { Product } from "../data/products";
 
 const ProductListing = () => {
   const [searchParams, setSearchParams] = useSearchParams();
