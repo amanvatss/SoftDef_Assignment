@@ -1,17 +1,21 @@
-import type { FC} from "react";
+import type { FC } from "react";
 
 const HeroBanner: FC = () => {
   return (
-    <div className="flex justify-between items-center bg-blue-500 rounded-lg p-8 text-white my-6">
-      <div>
-        <h2 className="text-2xl font-bold">Adidas Men Running Sneakers</h2>
-        <p className="text-sm">Performance and design. Taken right to the edge.</p>
+    <div className="flex flex-col md:flex-row justify-between items-center bg-blue-500 rounded-lg p-6 md:p-8 text-white my-6">
+      <div className="text-center md:text-left mb-4 md:mb-0">
+        <h2 className="text-xl md:text-2xl font-bold">
+          Adidas Men Running Sneakers
+        </h2>
+        <p className="text-sm md:text-base">
+          Performance and design. Taken right to the edge.
+        </p>
         <button className="mt-4 underline font-medium">SHOP NOW</button>
       </div>
       <img
-        src="https://via.placeholder.com/250x150.png?text=Adidas+Sneaker"
+        src="./src/assets/shoes-shoe-png-transparent-shoe-images-pluspng-17 1.png"
         alt="Adidas Men Running Sneakers"
-        className="h-32 md:h-40 object-contain"
+        className="h-32 sm:h-40 md:h-48 object-contain"
       />
     </div>
   );
