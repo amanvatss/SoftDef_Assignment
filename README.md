@@ -88,7 +88,7 @@ Make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/ecommerce-assessment.git
+   [git clone https://github.com/amanvatss/SoftDef_Assignment.git]
    cd ecommerce-assessment
    ```
 
@@ -206,19 +206,6 @@ vercel --prod
 
 ---
 
-## 📸 Screenshots
-
-### Desktop View
-*Coming soon - Add your desktop screenshots here*
-
-### Mobile View
-*Coming soon - Add your mobile screenshots here*
-
-### Features Demo
-*Coming soon - Add feature demonstration GIFs here*
-
----
-
 ## 💡 Development Notes
 
 ### Key Components
@@ -273,8 +260,8 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 **Aman Vats**
 
-- 💼 LinkedIn: [linkedin.com/in/yourprofile](https://www.linkedin.com/in/aman-vats-778a22279/))
-- 🐙 GitHub: [@yourusername]([https://github.com/yourusername](https://github.com/amanvatss))
+- 💼 LinkedIn: [https://www.linkedin.com/in/aman-vats-778a22279/]
+- 🐙 GitHub: [https://github.com/amanvatss]
 - 📧 Email: amanvats2245@gmail.com
 
 ---
