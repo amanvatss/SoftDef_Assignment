@@ -1,10 +1,10 @@
 // Correct way: import images at the top
-import img1 from "../assets/image Product.png";
-import img2 from "../assets/image product (1).png";
+import img1 from "../assets/nikepurple.png";
+import img2 from "../assets/purse.png";
 import img3 from "../assets/bag.png"; 
-import img4 from "../assets/product Picture02.png";
-import img5 from "../assets/product Picture03.png";
-import img6 from "../assets/product Picture01.png";
+import img4 from "../assets/nikepurple2.png";
+import img5 from "../assets/nikeyellow.png";
+import img6 from "../assets/nikeyellow2.png";
 
 export interface Product {
   id: string;

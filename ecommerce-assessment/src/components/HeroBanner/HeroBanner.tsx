@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import AdidasShoes from "../../assets/shoes-shoe-png-transparent-shoe-images-pluspng-17 1.png";
+import AdidasShoes from "../../assets/adidas.png";
 
 const HeroBanner: FC = () => {
   return (
