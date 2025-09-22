@@ -13,7 +13,7 @@ const HeroBanner: FC = () => {
         <button className="mt-4 underline font-medium">SHOP NOW</button>
       </div>
       <img
-        src="/addidas.png"
+        src="/adidas.png"
         alt="Adidas Men Running Sneakers"
         className="h-32 sm:h-40 md:h-48 object-contain"
       />
