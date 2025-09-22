@@ -1,5 +1,6 @@
 import type { FC } from "react";
 import { Facebook, Twitter } from "lucide-react";
+import logo from "../../assets/icon.png";
 
 const Footer: FC = () => {
   return (
@@ -10,7 +11,7 @@ const Footer: FC = () => {
           {/* Logo + Description */}
           <div>
             <h3 className="flex items-center space-x-2 text-blue-600 font-bold text-xl mb-4">
-              <img src="./src/assets/icon.png" alt="Logo" className="h-8" />
+              <img src={logo} alt="Logo" className="h-8" />
               <span>E-Comm</span>
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed max-w-sm">
