@@ -1,3 +1,11 @@
+// Correct way: import images at the top
+import img1 from "../assets/image Product.png";
+import img2 from "../assets/image product (1).png";
+import img3 from "../assets/bag.png"; 
+import img4 from "../assets/product Picture02.png";
+import img5 from "../assets/product Picture03.png";
+import img6 from "../assets/product Picture01.png";
+
 export interface Product {
   id: string;
   name: string;
@@ -24,7 +32,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: "./src/assets/image product.png",
+    imageUrl: img1,
   },
   {
     id: "2",
@@ -37,7 +45,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: "./src/assets/image product (1).png",
+    imageUrl: img2,
   },
   {
     id: "3",
@@ -50,7 +58,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: "./src/assets/image product.png",
+    imageUrl: img3,
   },
   {
     id: "4",
@@ -63,7 +71,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: "./src/assets/product Picture01.png",
+    imageUrl: img4,
   },
   {
     id: "5",
@@ -76,7 +84,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: "./src/assets/product Picture02.png",
+    imageUrl: img5,
   },
   {
     id: "6",
@@ -89,28 +97,20 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: "./src/assets/product Picture01.png",
+    imageUrl: img6,
   },
-
-  // --- dummy items reusing the same 6 images ---
+  // Generate dummy items (7–26) reusing images
   ...Array.from({ length: 20 }).map((_, i): Product => ({
     id: `${i + 7}`,
     name: `Nike Air Max Dummy ${i + 7}`,
-    price: Number((Math.random() * 600 + 100).toFixed(2)), // number
-    discountPrice: Number((Math.random() * 300 + 50).toFixed(2)), // number
-    discountPercent: Math.floor(Math.random() * 30) + 10, // 10–40% discount
-    ratingValue: Math.floor(Math.random() * 5) + 1, // rating 1–5
-    ratingCount: Math.floor(Math.random() * 500) + 20, // 20–500 ratings
-    isHot: Math.random() > 0.5, // true/false randomly
+    price: Number((Math.random() * 600 + 100).toFixed(2)),
+    discountPrice: Number((Math.random() * 300 + 50).toFixed(2)),
+    discountPercent: Math.floor(Math.random() * 30) + 10,
+    ratingValue: Math.floor(Math.random() * 5) + 1,
+    ratingCount: Math.floor(Math.random() * 500) + 20,
+    isHot: Math.random() > 0.5,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: [
-      "./src/assets/image product.png",
-      "./src/assets/image product (1).png",
-      "./src/assets/image product.png",
-      "./src/assets/product Picture01.png",
-      "./src/assets/product Picture02.png",
-      "./src/assets/product Picture01.png",
-    ][i % 6], // cycle through 6 images
+    imageUrl: [img1, img2, img3, img4, img5, img6][i % 6], // cycle
   })),
 ];
