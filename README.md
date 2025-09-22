@@ -32,7 +32,7 @@ A modern, responsive **E-commerce Product Listing website** built with **React**
 
 Created as part of an assessment assignment, this application transforms a Figma design into a fully functional e-commerce interface featuring advanced filtering, sorting, cart management, and responsive design patterns.
 
-🔗 **Live Demo**: [https://ecommerce-assessment.vercel.app]([https://ecommerce-assessment.vercel.app](https://soft-def-assignment-orpin.vercel.app/))
+🔗 **Live Demo**: [https://soft-def-assignment-orpin.vercel.app/]
 
 ---
 
