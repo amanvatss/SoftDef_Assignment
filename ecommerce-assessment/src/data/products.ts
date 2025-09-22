@@ -1,11 +1,3 @@
-// Correct way: import images at the top
-import img1 from "../assets/nikepurple.png";
-import img2 from "../assets/purse.png";
-import img3 from "../assets/bag.png"; 
-import img4 from "../assets/nikepurple2.png";
-import img5 from "../assets/nikeyellow.png";
-import img6 from "../assets/nikeyellow2.png";
-
 export interface Product {
   id: string;
   name: string;
@@ -32,7 +24,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: img1,
+    imageUrl: "/nikepurple.png",
   },
   {
     id: "2",
@@ -45,7 +37,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: img2,
+    imageUrl: "/purse.png",
   },
   {
     id: "3",
@@ -58,7 +50,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: img3,
+    imageUrl: "/bag.png",
   },
   {
     id: "4",
@@ -71,7 +63,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: img4,
+    imageUrl: "/nikepurple2.png",
   },
   {
     id: "5",
@@ -84,7 +76,7 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: img5,
+    imageUrl: "/nikeyellow.png",
   },
   {
     id: "6",
@@ -97,9 +89,9 @@ export const products: Product[] = [
     isHot: true,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: img6,
+    imageUrl: "/nikeyellow2.png",
   },
-  // Generate dummy items (7–26) reusing images
+  // Dummy items (7–26) reusing the same 6 images in /public
   ...Array.from({ length: 20 }).map((_, i): Product => ({
     id: `${i + 7}`,
     name: `Nike Air Max Dummy ${i + 7}`,
@@ -111,6 +103,13 @@ export const products: Product[] = [
     isHot: Math.random() > 0.5,
     colors: ["#000000", "#FF0000"],
     category: "Sneakers",
-    imageUrl: [img1, img2, img3, img4, img5, img6][i % 6], // cycle
+    imageUrl: [
+      "/nikepurple.png",
+      "/purse.png",
+      "/bag.png",
+      "/nikepurple2.png",
+      "/nikeyellow.png",
+      "/nikeyellow2.png",
+    ][i % 6], // cycle through public assets
   })),
 ];

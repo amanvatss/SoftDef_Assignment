@@ -3,7 +3,6 @@ import { ShoppingCart, Menu } from "lucide-react";
 import { useCart } from "../../context/CartContext";
 import { useState } from "react";
 import CartDrawer from "../Cart/CartDrawer";
-import logo from "../../assets/icon.png";
 
 interface NavbarProps {
   onMenuClick: () => void;
@@ -17,7 +16,7 @@ const Navbar: FC<NavbarProps> = ({ onMenuClick }) => {
     <header className="flex justify-between items-center px-4 md:px-8 py-4 shadow-sm bg-white">
       {/* Logo */}
       <div className="flex items-center space-x-2 text-blue-600 font-bold text-xl">
-        <img src={logo} alt="Logo" className="h-8" />
+        <img src="/icon.png" alt="Logo" className="h-8" />
         <span>E-Comm</span>
       </div>
 

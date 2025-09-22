@@ -1,6 +1,5 @@
 import type { FC } from "react";
 import { Facebook, Twitter } from "lucide-react";
-import logo from "../../assets/icon.png";
 
 const Footer: FC = () => {
   return (
@@ -11,16 +10,19 @@ const Footer: FC = () => {
           {/* Logo + Description */}
           <div>
             <h3 className="flex items-center space-x-2 text-blue-600 font-bold text-xl mb-4">
-              <img src={logo} alt="Logo" className="h-8" />
+              <img src="/icon.png" alt="Logo" className="h-8" />
               <span>E-Comm</span>
             </h3>
             <p className="text-sm text-gray-700 leading-relaxed max-w-sm">
               Lorem Ipsum is simply dummy text of the
               <br />
-              printing and typesetting industry. Lorem 
-              <br />Ipsum has been the industry’s standard 
-              <br />dummy text ever since the 1500s, when
-              <br />an unknown printer.
+              printing and typesetting industry. Lorem
+              <br />
+              Ipsum has been the industry’s standard
+              <br />
+              dummy text ever since the 1500s, when
+              <br />
+              an unknown printer.
             </p>
           </div>
 
@@ -28,10 +30,11 @@ const Footer: FC = () => {
           <div>
             <h4 className="font-semibold text-lg mb-3">Follow Us</h4>
             <p className="text-sm text-gray-700 leading-relaxed mb-3 max-w-sm">
-              Since the 1500s, when an unknown 
+              Since the 1500s, when an unknown
               <br />
               printer took a galley of type and
-              <br />scrambled.
+              <br />
+              scrambled.
             </p>
             <div className="flex space-x-4 text-blue-600">
               <a href="#" aria-label="Facebook" className="hover:text-blue-800">
@@ -144,11 +147,7 @@ const Footer: FC = () => {
             © 2018 Ecommerce theme by www.bisenbaev.com
           </p>
           <div className="flex flex-wrap justify-center gap-3 md:justify-end">
-            <img
-              src="./src/assets/westernUnion.png"
-              alt="Western Union"
-              className="h-6"
-            />
+            <img src="/westernUnion.png" alt="Western Union" className="h-6" />
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
               alt="Mastercard"

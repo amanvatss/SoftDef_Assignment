@@ -1,5 +1,4 @@
 import type { FC } from "react";
-import AdidasShoes from "../../assets/adidas.png";
 
 const HeroBanner: FC = () => {
   return (
@@ -14,7 +13,7 @@ const HeroBanner: FC = () => {
         <button className="mt-4 underline font-medium">SHOP NOW</button>
       </div>
       <img
-        src={AdidasShoes}
+        src="/addidas.png"
         alt="Adidas Men Running Sneakers"
         className="h-32 sm:h-40 md:h-48 object-contain"
       />
